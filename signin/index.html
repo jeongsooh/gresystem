@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRE SYSTEM</title>
+
+    <!--파비콘-->
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+  <link rel="icon" href="../gresystem_logo.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="../css/signin.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+  <script defer src="../js/youtube.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="inner">
+
+      <a href="/" class="logo">
+        <img src="../images/gresystem_logo.png" alt="GRESYSTEM" />
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="/signin">로그인</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">회원정보</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">고객지원</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">충전기 찾기</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">제품소개</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>과금형콘센트</h4>
+                  <ul>
+                    <li>CP100</li>
+                    <li>CP110 - '22년 상반기 출시 예정</li>
+                    <li>CP120 '23년 상반기 출시 예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>완속 / 중속 충전기</h4>
+                  <ul>
+                    <li>CP200 - '22년 하반기 출시 예정</li>
+                    <li>CP210 - '22년 하반기 출시 예정</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>엑세서리</h4>
+                  <ul>
+                    <li>휴대용 충전케이블</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>최상의 충전경험을 즐기기</h4>
+                  <ul>
+                    <li>급속충전기 충전가격 현황</li>
+                    <li>충전사업자별 요금 현황</li>
+                    <li>한전 전기자동차 충전전력요금</li>
+                    <li>전기차 충전 즐기는 법</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>나에게 맞는 전기차 충전방법 찾기</h4>
+                <p>지알이시스템이 여러분에게 가장 효율적인 충전방법을 찾아드립니다.</p>
+                <h4>가장 효율적인 전기차 충전</h4>
+                <p>여러가지 선택 및 충전방법을 통해 다양한 충전을 즐겨보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">서비스</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>지알이시스템 협력 충전사업자</h4>
+                  <ul>
+                    <li>지커넥트</li>
+                    <li>에스트래픽</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>비공용 충전기</h4>
+                  <ul>
+                    <li>아파트</li>
+                    <li>기업 업무용 빌딩</li>
+                    <li>펜션 등 여가시설</li>
+                    <li>기타 비공용 충전시설 운영</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>지알이시스템 충전서비스</h4>
+                  <ul>
+                    <li>지알이시스템 충전서비스 특장점</li>
+                    <li>지알이시스템 충전서비스 운영방법</li>
+                    <li>지알이시스템 충전서비스 이용가격</li>
+                    <li>서비스 신청방법</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>충전경험 나누기</h4>
+                  <ul>
+                    <li>중소기업</li>
+                    <li>펜션</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>전기자동차 충전인프라 확산 캠페인</h4>
+                <p>전기자동차 충전기가 필요하세요? 차지플러스를 설치해 보세요. 다양한 선택의 기회를 제공해 드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">충전소 및 현황</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>충전소 찾기</h4>
+                  <ul>
+                    <li>퀵 검색</li>
+                    <li>지역 검색</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>충전소 이야기</h4>
+                  <ul>
+                    <li>기흥힉스유타워</li>
+                    <li>세종참편한맑은아파트</li>
+                    <li>개포자이이편한세상아파트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>충전소 찾기</h4>
+                <p>보다 빠르게 편리한 충전소를 찾아보세요.</p>
+                <h4>충전소 이벤트</h4>
+                <p>쇼핑을 즐기면서 충전서비스를 즐길 수 있는 가든식스를 방문해 보세요.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">회사소개</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>지역 사회 참여 및 환경보호</h4>
+                  <ul>
+                    <li>청년벤처기업과의 협업</li>
+                    <li>재능기부</li>
+                    <li>전기자동차 확산 캠페인</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>탄소 중립과 사회 공헌</h4>
+                  <ul>
+                    <li>윤리적 구매</li>
+                    <li>공정한 거래</li>
+                    <li>신재생에너지 활용 캠페인</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>지알이시스템 소개</h4>
+                  <ul>
+                    <li>지알이시스템 개요</li>
+                    <li>연혁</li>
+                    <li>찾아오시는 길</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>전기자동차 전환 캠페인</h4>
+                <p>전기자동차 한 대가 축구장 크기 1/3면적의 소나무 숲과 같은 탄소저감 효과를 가져옵니다.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">WHAT'S NEW</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>프로모션 & 이벤트</h4>
+                  <ul>
+                    <li>전체</li>
+                    <li>파트너 모집</li>
+                    <li>휴대용 충전케이블 이벤트</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>새소식</h4>
+                  <ul>
+                    <li>전체</li>
+                    <li>상품 출시</li>
+                    <li>차지플러스 이용후기</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>충전사업자 / 파트너별 이벤트</h4>
+                  <ul>
+                    <li>충전사업자</li>
+                    <li>충전기 영업파트너</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents__texture">
+              <div class="inner">
+                <h4>충전사업자 / 파트너별 이벤트</h4>
+                <p>지알이시스템의 충전기 차지플러스와 관련된 충전사업자 및 영업파트너의 이벤트 정보를 확인 하실 수 있습니다.</p>
+                <h4>소셜 지알이시스템</h4>
+                <p>다양한 지알이시스템 SNS 채널을 통해 지알이시스템을 만나보세요!</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="signin">
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2>
+        <strong>지알이시스템</strong>에 오신 것을 환영합니다.
+      </h2>
+      <form action="">
+        <input type="text" placeholder="아이디를 입력하세요."/>
+        <input type="password" placeholder="비밀번호를 입력하세요."/>
+        <input type="submit" value="로그인"/>
+        <p>
+          * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br />
+          정기적으로 비밀번호를 변경하세요!
+        </p>
+      </form>
+      <div class="actions">
+        <a href="javascript:void(0)">회원가입</a>
+        <a href="javascript:void(0)">아이디 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div class="inner">
+
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">회원 카드 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">파트너 사업제의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div>
+
+      <div class="info">
+        <span>사업자등록번호 278-87-01597</span>
+        <span>(주)지알이시스템 대표이사 이승욱</span>
+        <span>TEL : 070-7566-8261</span>
+        <span>개인정보 책임자 : 이승욱</span>
+      </div>
+
+      <p class="copyright">
+        &copy; <span class="this-year"></span> GRE System Company. All Rights Reserved.
+      </p>
+      <img src="../images/gresystem_logo_only_text.PNG" alt="GRE SYSTEM" class="logo" />
+
+    </div>
+  </footer>
+
+
+  <!--TO TOP BUTTON-->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+</body>
+</html>
