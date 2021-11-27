@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>GRE SYSTEM</title>
 
-    <!--파비콘-->
+  <!--Open Graph-->
+  <!--http://ogp.me/-->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GRESystem" />
+  <meta property="og:title" content="GRE System Co., LTD." />
+  <meta property="og:description" content="GRE시스템은 전기차 충전인프라 확산을 위한 기술과 제품 개발을 통하여, 기후변화와 환경 문제에 대한 해법을 찾고 있습니다." />
+  <meta property="og:image" content="../images/gresystem_logo.jpg" />
+  <meta property="og:url" content="https://gresystem.co.kr" />
+  <!--Twitter Card-->
+  <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="GRESystem" />
+  <meta property="twitter:title" content="GRE System Co., LTD." />
+  <meta property="twitter:description" content="GRE시스템은 전기차 충전인프라 확산을 위한 기술과 제품 개발을 통하여, 기후변화와 환경 문제에 대한 해법을 찾고 있습니다." />
+  <meta property="twitter:image" content="../images/gresystem_logo.jpg" />
+  <meta property="twitter:url" content="https://gresystem.co.kr" />
+
+  <!--파비콘-->
   <!--<link rel="shortcut icon" href="favicon.ico" />-->
   <link rel="icon" href="../gresystem_logo.png" />
   <!--브라우저 스타일 초기화-->
@@ -17,6 +34,8 @@
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/item.css" />
   <link rel="stylesheet" href="../css/signin.css" />
   <link rel="stylesheet" href="../css/main.css" />
 
@@ -33,7 +52,6 @@
 
   <script defer src="../js/youtube.js"></script>
   <script defer src="../js/main.js"></script>
-
 </head>
 <body>
   <!--HEADER-->
@@ -50,7 +68,7 @@
             <a href="/signin">로그인</a>
           </li>
           <li>
-            <a href="javascript:void(0)">회원정보</a>
+            <a href="/administration">서비스 관리</a>
           </li>
           <li>
             <a href="javascript:void(0)">고객지원</a>
@@ -72,7 +90,9 @@
             <div class="contents__menu">
               <ul class="inner">
                 <li>
-                  <h4>과금형콘센트</h4>
+                  <h4>
+                    <a href="/item/outlet.html">과금형콘센트</a>
+                  </h4>
                   <ul>
                     <li>CP100</li>
                     <li>CP110 - '22년 상반기 출시 예정</li>
@@ -80,21 +100,27 @@
                   </ul>
                 </li>
                 <li>
-                  <h4>완속 / 중속 충전기</h4>
+                  <h4>
+                    <a href="/item/charger.html">완속 / 중속 충전기</a>
+                  </h4>
                   <ul>
                     <li>CP200 - '22년 하반기 출시 예정</li>
                     <li>CP210 - '22년 하반기 출시 예정</li>
                   </ul>
                 </li>
                 <li>
-                  <h4>엑세서리</h4>
+                  <h4>
+                    <a href="/item/accesory.html">엑세서리</a>
+                  </h4>
                   <ul>
                     <li>휴대용 충전케이블</li>
                   </ul>
                 </li>
                 <li>
-                  <h4>최상의 충전경험을 즐기기</h4>
-                  <ul>
+                  <h4>
+                    <a href="/item/additional.html">최상의 충전경험을 즐기기</a>
+                  </h4>
+                  <ul>                    
                     <li>급속충전기 충전가격 현황</li>
                     <li>충전사업자별 요금 현황</li>
                     <li>한전 전기자동차 충전전력요금</li>
@@ -284,7 +310,7 @@
       <form action="">
         <input type="text" placeholder="아이디를 입력하세요."/>
         <input type="password" placeholder="비밀번호를 입력하세요."/>
-        <input type="submit" value="로그인"/>
+        <input type="button" onclick="location.href='/signin/members.html';" value="로그인"/>
         <p>
           * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br />
           정기적으로 비밀번호를 변경하세요!
@@ -297,7 +323,6 @@
       </div>
     </div>
   </section>
-
 
   <!--FOOTER-->
   <footer>

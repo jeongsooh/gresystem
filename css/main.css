@@ -114,7 +114,18 @@ header {
 header > .inner {
   height: 120px;
 }
+header > .inner_small {
+  height: 80px;
+}
 header .logo {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .logo_small {
   height: 80px;
   position: absolute;
   top: 0;
@@ -230,6 +241,9 @@ header .main-menu .item .item__contents .contents__menu > ul > li h4 {
   padding: 3px 0 12px 0;
   font-size: 14px;
   color: #fff;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4 a:hover {
+  color: #2aa2db;
 }
 header .main-menu .item .item__contents .contents__menu > ul > li ul li {
   padding: 5px 0;

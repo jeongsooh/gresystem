@@ -52,7 +52,7 @@
   font-size: 14px;
 }
 
-.signin__card form [type="submit"] {
+.signin__card form [type="button"] {
   background-color: #2aa2db;
   border: none;
   color: #fff;
@@ -89,9 +89,4 @@
   text-decoration: underline;
 }
 
-/* items category */
-/* .outlet_info {
-  color: red;
-  background-color: green;
-  height: 200px;
-} */
+

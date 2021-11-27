@@ -15,6 +15,7 @@ img {
 /* 모든 a tag에 적용되는 규칙.. 밑줄을 표시하지 않음 */
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .inner {
