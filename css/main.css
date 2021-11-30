@@ -908,6 +908,19 @@ footer .copyright {
 footer .logo {
   margin: 30px auto 0;
 }
+footer .gresystem > ul > li:nth-child(1) {
+  color: #2aa2db;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+footer .gresystem > ul > li:nth-child(2) {
+  color: #999;
+  text-align: center;
+  /* margin-top: 10px; */
+  font-size: 12px;
+}
 
 
 /*SCROLL TO TOP*/
