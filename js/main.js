@@ -120,6 +120,9 @@ new Swiper('.awards .swiper-container', {
 })
 
 
+
+
+
 /**
  * Promotion 슬라이드 토글 기능
  */
@@ -142,6 +145,25 @@ promotionToggleBtn.addEventListener('click', function () {
   }
 })
 
+// 사이드 바 서브메뉴 숨기기 
+const collapseEl = document.querySelector('#orders-collapse.collapse')
+const mbmToggleBtn = document.querySelector('button.btn-plain')
+let isHidePromotion2 = false
+mbmToggleBtn.addEventListener('click', function () {
+  isHidePromotion2 = !isHidePromotion2
+  console.log("clicked..................")
+  if (isHidePromotion2) {
+    collapseEl.classList.add('hide')
+  } else {
+    collapseEl.classList.remove('hide')
+  }
+})
+
+const menuToggleBtn = document.querySelector('button.content_button')
+menuToggleBtn.addEventListener('click', event => {
+  menuToggleBtn.innerHTML = `클릭 수: ${event.detail}`
+  console.log("test........")
+})
 
 /**
  * 부유하는 요소 관리

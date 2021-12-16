@@ -31,8 +31,8 @@
   <!--Lodash-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 
-  <script defer src="../js/youtube.js"></script>
-  <script defer src="../js/main.js"></script>
+  <!-- <script defer src="../js/youtube.js"></script> -->
+  <!-- <script defer src="../js/main.js"></script> -->
 </head>
 <body>
   <!--HEADER-->
@@ -67,15 +67,40 @@
     <div class="inner">
       <nav class="side_menu">
         <h2>서비스 관리</h2>
+        <li class="mbm-line"></li>
         <ul class="item">
-          <li><a href="./admin.html">대시보드</a></li>
-          <li><a href="./membership_mgt.html">회원관리</a></li>
-          <li><a href="./chargingpoint_mgt.html">충전기관리</a></li>
-          <li><a href="./billing_settlement.html">과금및정산관리</a></li>
+          <li class="mbm">
+            <button class="btn-plain btn--transparent">
+              대시보드
+            </button>
+          </li>
+          <li class="mbm">
+            <button class="btn-plain">
+              회원관리
+            </button>
+          </li>
+          <li class="mbm">
+            <button class="btn-plain" >
+              충전기관리
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">충전기현황</a></li>
+                <li><a href="#" class="link-dark rounded">충전기등록/수정</a></li>
+                <li><a href="#" class="link-dark rounded">테스트/업데이트</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mbm">
+            <button class="btn-plain">
+              과금및정산관리
+            </button>
+          </li>
         </ul>
       </nav>
       <div class="menu_contents">
-        <p> </p>
+        <p>상세한 내용이 기술될 예정 </p>
+        <button class="content_button">Click</button>
       </div>
     </div>
   </section>
@@ -125,4 +150,5 @@
   </div>
 
 </body>
+<script defer src="../js/main.js"></script>
 </html>
