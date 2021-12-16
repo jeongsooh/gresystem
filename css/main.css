@@ -285,7 +285,8 @@ header .badges .badge {
 /*VISUAL*/
 .visual {
   margin-top: 120px;
-  background-image: url("../images/grevisual2_bg.jpg");
+  /* background-image: url("../images/grevisual2_bg.jpg"); */
+  background-color: #2aa2db;
   background-position: center;
 }
 .visual .inner {

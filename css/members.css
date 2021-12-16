@@ -32,7 +32,7 @@ flex: 1;
 
 }
 .sidebox .inner .side_menu > ul > li {
-  margin-top: 10px;
+  margin-top: 2px;
   margin-left: 30px;
   text-align: left;
 }
@@ -49,4 +49,16 @@ flex: 1;
   background-color: #dde4ee;
   flex: 5;
   text-align:center;
+}
+
+.mbm-line {
+  color: #94abcb;
+}
+
+.collapse ul li {
+  margin-left: -20px;
+}
+
+.mbm .collapse.hide {
+  height: 0;
 }
